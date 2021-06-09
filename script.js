@@ -30,7 +30,11 @@ doodle = {
     set where(location){
         this._doodle.where = location;
     },
-
+    getRandomCard: function(cardType){
+        const cards = this._doodle[cardType];
+        const randomIndex = Math.floor(Math.random() *  cards.length);
+        return cards[randomIndex];
+      },
     respond: ()=> {
         console.log("We're cooking on gas!")
     }
@@ -45,3 +49,4 @@ console.log(doodle.who)
 console.log(doodle.what)
 console.log(doodle.where)
 console.log(doodle.doodle)
+console.log(doodle.getRandomCard('who'))
