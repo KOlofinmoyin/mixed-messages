@@ -30,6 +30,12 @@ doodle = {
     set where(location){
         this._doodle.where = location;
     },
+    addCard: function(cardType, cardPhrase){
+        const card = {
+            phrase: cardPhrase
+        }
+        return this._doodle[cardType].push(card);
+    },
     getRandomCard: function(cardType){
         const cards = this._doodle[cardType];
         const randomIndex = Math.floor(Math.random() *  cards.length);
@@ -49,4 +55,5 @@ console.log(doodle.who)
 console.log(doodle.what)
 console.log(doodle.where)
 console.log(doodle.doodle)
+console.log(doodle.addCard('who', 'Bill Gates'))
 console.log(doodle.getRandomCard('who'))
