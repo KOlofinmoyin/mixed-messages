@@ -16,7 +16,7 @@ doodle = {
         return this._doodle.who;
         },
     set who(subject){
-    this._doodle.what = subject;
+    this._doodle.who = subject;
     },
     get what(){
     return this._doodle.what;
@@ -30,6 +30,7 @@ doodle = {
     set where(location){
         this._doodle.where = location;
     },
+
     respond: ()=> {
         console.log("We're cooking on gas!")
     }
@@ -40,4 +41,7 @@ doodle.respond()
 console.log(doodle._doodle.who)
 console.log(doodle._doodle.what)
 console.log(doodle._doodle.where)
+console.log(doodle.who)
+console.log(doodle.what)
+console.log(doodle.where)
 console.log(doodle.doodle)
