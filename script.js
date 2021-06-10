@@ -41,19 +41,25 @@ doodle = {
         const randomIndex = Math.floor(Math.random() *  cards.length);
         return cards[randomIndex];
       },
-    respond: ()=> {
-        console.log("We're cooking on gas!")
-    }
+    getRandomDoodle: function(){
+        const who = this.getRandomCard('who');
+        const what = this.getRandomCard('what');
+        const where = this.getRandomCard('where');
+
+        return `${who.phrase} - ${what.phrase}, ${where.phrase}.`;
+    },
 }
 
 //Tests:
-doodle.respond()
-console.log(doodle._doodle.who)
-console.log(doodle._doodle.what)
-console.log(doodle._doodle.where)
-console.log(doodle.who)
-console.log(doodle.what)
-console.log(doodle.where)
-console.log(doodle.doodle)
-console.log(doodle.addCard('who', 'Bill Gates'))
-console.log(doodle.getRandomCard('who'))
+// console.log(doodle._doodle.who)
+// console.log(doodle._doodle.what)
+// console.log(doodle._doodle.where)
+// console.log(doodle.who)
+// console.log(doodle.what)
+// console.log(doodle.where)
+// console.log(doodle.doodle)
+// console.log(doodle.addCard('who', 'Bill Gates'))
+// console.log(doodle.addCard('what', 'Sweeping the streets'))
+// console.log(doodle.addCard('where', 'in Bangladesh'))
+// console.log(doodle.getRandomCard('who'))
+// console.log(doodle.getRandomDoodle());
