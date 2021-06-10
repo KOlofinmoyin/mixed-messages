@@ -46,20 +46,35 @@ doodle = {
         const what = this.getRandomCard('what');
         const where = this.getRandomCard('where');
 
-        return `${who.phrase} - ${what.phrase}, ${where.phrase}.`;
+        return `${who.phrase} -- ${what.phrase} -- ${where.phrase}.`;
     },
 }
 
 //Tests:
-// console.log(doodle._doodle.who)
-// console.log(doodle._doodle.what)
-// console.log(doodle._doodle.where)
-// console.log(doodle.who)
-// console.log(doodle.what)
-// console.log(doodle.where)
-// console.log(doodle.doodle)
-// console.log(doodle.addCard('who', 'Bill Gates'))
-// console.log(doodle.addCard('what', 'Sweeping the streets'))
-// console.log(doodle.addCard('where', 'in Bangladesh'))
-// console.log(doodle.getRandomCard('who'))
-// console.log(doodle.getRandomDoodle());
+// doodle._doodle.who)
+// doodle._doodle.what)
+// doodle._doodle.where)
+// doodle.who)
+// doodle.what)
+// doodle.where)
+// doodle.doodle)
+
+//Add sample doodle cards:
+doodle.addCard('who', 'Bill Gates');
+doodle.addCard('who', 'A baby');
+doodle.addCard('who', 'Elvis');
+doodle.addCard('who', 'Desmond Tutu');
+doodle.addCard('who', 'Mathilda');
+doodle.addCard('what', 'sweeping');
+doodle.addCard('what', 'stroking a cat');
+doodle.addCard('what', 'holding a flower');
+doodle.addCard('what', 'break dancing');
+doodle.addCard('what', 'driving a Lambourghini');
+doodle.addCard('where', 'in Bangladesh');
+doodle.addCard('where', 'on the football pitch');
+doodle.addCard('where', 'at Buckingham Palace');
+doodle.addCard('where', 'in Mushin');
+doodle.addCard('where', 'in the sea');
+
+//Call the #getRandomDoodle() method
+console.log(doodle.getRandomDoodle());
