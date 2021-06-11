@@ -13,7 +13,7 @@ A message generator program.
 3. The CLI tool will find corresponding component messages and construct a doodle card for you.
 
 ## Usage: 
-Every time a user runs the program, they get a new, randomized output i.e. *like an astrology generator, inspirational message, or nonsensical jokes*. 
+Every time a user runs the program, they get a new, randomized output i.e. *fun doodle messages for the [`Doodle-buzz`] (https://www.amazon.co.uk/Professor-Puzzle-Doodle-Buzz-Quiz/dp/B07JN8KDDM) board game*. 
 
 ### Loading sample doodle cards for <br>
 **who:**<br>
